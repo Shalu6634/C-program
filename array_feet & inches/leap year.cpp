@@ -18,7 +18,7 @@ main()
 	cin>>y;
 	cout<<"leap year :";
 	int i=0,j=0;
-	int n=y-x;
+	int n=(y-x)/4+1;
 	int a[n];
 	for(i=x; i<=y; i++)
 	{
