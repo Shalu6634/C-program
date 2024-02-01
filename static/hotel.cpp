@@ -60,7 +60,7 @@ class Hotel
 	}
 		
 };
-string Hotel::name="--Sarvottam Hotel--";
+string Hotel::name="--JD Hotel--";
 int Hotel::establish_year=2010;
 
 main()
