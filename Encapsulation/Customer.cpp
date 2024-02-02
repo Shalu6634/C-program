@@ -58,8 +58,8 @@ int main()
 	int i;
 	for(i=0; i<5; i++)
 	{
-		c1.set(i);
-		c1.get(i);
+		c1[i].set(i);
+		c1[i].get(i);
 	}
 	return 0;
 }
