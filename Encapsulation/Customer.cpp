@@ -11,7 +11,7 @@ using namespace std;
 class Customer
 {
 	int id,age,sim;
-	long long number;
+	long  number;
 	string name,city,brand;
 	
 	public:
