@@ -9,26 +9,26 @@ class Cricket
 	protected:
 		int over;
 		public:
-			void getTotalOvers(int over) 
+			void getTotalOvers() 
 			{
-			   cout<<"Total over in the match : 70"<<endl;
+			   cout<<"Total over "<<over<<endl;
 			}
 };
 class T20Match : public Cricket
 {
 	public:
-		void getTotalOvers(int over) 
+		void getTotalOvers() 
 		{
-			this->over=over;
+			over=20;
 			cout<<"Total over in T20 match "<<over<<endl;
 		}
 };
 class ODIMatch : public T20Match
 {
 	public:
-		void getTotalOvers(int over) 
+		void getTotalOvers() 
 		{
-			this->over=over;
+			over=50;
 		    cout<<"Total over in ODI match "<<over<<endl;		
 		}
 };
@@ -36,7 +36,7 @@ main()
 {
 
 	T20Match t1;
-	t1.getTotalOvers(20);
+	t1.getTotalOvers();
 	ODIMatch d1;
-	d1.getTotalOvers(50);
+	d1.getTotalOvers();
 }
