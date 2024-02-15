@@ -8,29 +8,29 @@ class Math
 	public:
 		void set()
 		{
-			cout<<"Enter a:";
-			cin>>a;
-			cout<<"Enter b:";
-			cin>>b;
-			
+		  cout<<"enter a:";
+		  cin>>a;
+		  cout<<"enter b:";
+		  cin>>b;
 		}
-		int get()
+		int  get()
 		{
-			if(a<b)//a=a2,b=a1
+			if(a>b)
 			{
-			  cout<<"a1 is higher value";	
+				cout<<"a is max"<<endl;
 			}
 			else
 			{
-				cout<<"a2 is higher value";
-			}	
+			   cout<<"b is max"<<endl;
+			}
 		}
-		Math operator<(Math &m2)
+		Math operator>(Math &m)
 		{
-			 Math temp;
-   	         temp.b=this->a;
-   	         temp.a=m2.a;
-   	         return temp;
+	       Math temp;
+	       temp.a=a;
+	       temp.b=b;
+		   return temp;
+	       
 		}
 };
 main()
@@ -38,7 +38,6 @@ main()
 	Math m1,m2,m3;
 	m1.set();
 	m2.set();
-	m3=m1<m2;
+	m3=m1>m2;
 	m2.get();
-	
 }
