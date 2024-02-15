@@ -4,39 +4,28 @@
 using namespace std;
 class Math
 {
-	int a,b;
+	int a;
 	public:
-		void set()
-		{
-			cout<<"Enter a:";
-			cin>>a;
-			cout<<"Enter b:";
-			cin>>b;
-			
-		}
-		void get()
-		{
-			cout<<" a :"<<a<<endl;
-			cout<<" b :"<<b<<endl;
-		}
-		Math operator+(Math &m2)
-		{
-			Math temp;
-			int x= this->a+m2.a;
-			int y= this->b+m2.b;
-			temp.a=x;
-			temp.b=y;
-		    temp.a=temp.a+1;
-		    temp.b=temp.b+1;
-			return temp;
-		}
+      void set(int a)
+       {
+          this->a=a;
+       }
+	void get()
+	{
+	      cout<<" a : "<< a <<endl;
+	}
+	Math operator++(int)
+	{
+	  Math num;
+	   num.a=a+1;;
+	   return num;
+	}
 };
 main()
 {
-	Math m1,m2,m3;
-	m1.set();
-	m2.set();
-	m3=m1+m2;
-	m3.get();
+	Math m1,m2;
+	m1.set(3);
+	m2=m1++;
+	m2.get();
 	
 }
