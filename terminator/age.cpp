@@ -17,16 +17,16 @@ class Age
 	    {   
 	      if(age<18 || age>90)
 	      {
-		    throw age;
+		   cout<<"you cant vote : "<<age;
 	      }
 	      else
 	      {
-	        cout<<"you can vote : "<<age;
-		  }
+	        throw 0;
+	      }
 	    }
 	    catch(int x)
 	    {
-		   cout<<x<<" "<<"you cant vote !";
+		   cout<<x<<" "<<"you can vote !";
 	    } 
 	}
 	
